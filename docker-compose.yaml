@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  npfl122:
+    container_name: "npfl122"
+    image: ubuntu/torch
+    build:
+      context: .
+      shm_size: '64gb'  # <-- this will set the size when BUILDING
+    shm_size: '64gb'    # <-- when RUNNING
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - /home/users/${USER}/code/npfl122:/home/user/npfl122 # mount codebase
+      # - /epsilon:/epsilon   # mount any other volumes/data etc.
+      # - /Users/${USER}/code/npfl122:/home/user/npfl122
+    command: ["tail", "-f", "/dev/null"]

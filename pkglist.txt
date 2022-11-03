@@ -1,0 +1,6 @@
+sudo
+neovim
+htop
+ffmpeg
+libsm6
+libxext6
