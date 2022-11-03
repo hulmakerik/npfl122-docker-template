@@ -16,7 +16,7 @@ services:
               count: 1
               capabilities: [gpu]
     volumes:
-      - /home/users/${USER}/code/npfl122:/home/user/npfl122 # mount codebase
+      - /home/${USER}/code/npfl122-docker-template:/home/user/npfl122 # mount codebase
       # - /epsilon:/epsilon   # mount any other volumes/data etc.
       # - /Users/${USER}/code/npfl122:/home/user/npfl122
     command: ["tail", "-f", "/dev/null"]
