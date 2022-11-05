@@ -1,10 +1,11 @@
 Docker template for Deep ML.
 
-https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch
-
-https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-22-10.html#rel-22-10
+Based on this image: https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-22-10.html#rel-22-10
 
 ## Prerequisites
+
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch
+
 
 Using the PyTorch NGC Container requires the host system to have the following installed:
  * Docker Engine
