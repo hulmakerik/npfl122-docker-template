@@ -16,6 +16,9 @@ Using the PyTorch NGC Container requires the host system to have the following i
 
 ## Setup
 
+Change variables within the files listed below.
+
+
 ### docker-compose.yaml
 set `container_name`, `image`, `environment`, `volumes`, `ports`
 
